@@ -15,9 +15,11 @@ program
 program
     .command('clear')
     .description('clear all tasks')
-    .action((...args) => {
-
+    .action(() => {
+        api.clear()
     })
 
 
 program.parse(process.argv)
+
+console.log(process.argv)

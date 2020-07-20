@@ -19,7 +19,7 @@ program
 
 if (process.argv.length === 2) {
     // 说明用户直接运行 node cli.js
-    api.showAll()
+    api.showAll().then(()=> {})
     return
 }
 
